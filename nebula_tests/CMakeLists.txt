@@ -56,7 +56,6 @@ if(BUILD_TESTING)
 
 
     add_subdirectory(continental)
-    add_subdirectory(hesai)
     add_subdirectory(velodyne)
 
 endif()

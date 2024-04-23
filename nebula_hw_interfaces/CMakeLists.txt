@@ -26,10 +26,6 @@ include_directories(
         ${PCL_COMMON_INCLUDE_DIRS}
 )
 
-ament_auto_add_library(nebula_hw_interfaces_hesai SHARED
-        src/nebula_hesai_hw_interfaces/hesai_hw_interface.cpp
-        )
-
 ament_auto_add_library(nebula_hw_interfaces_velodyne SHARED
         src/nebula_velodyne_hw_interfaces/velodyne_hw_interface.cpp
         )

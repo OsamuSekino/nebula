@@ -30,10 +30,6 @@ include_directories(
 )
 
 # Lidar Decoders
-# Hesai
-ament_auto_add_library(nebula_decoders_hesai SHARED
-        src/nebula_decoders_hesai/hesai_driver.cpp
-        )
 
 # Velodyne
 ament_auto_add_library(nebula_decoders_velodyne SHARED

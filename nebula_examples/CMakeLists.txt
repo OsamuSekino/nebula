@@ -28,23 +28,6 @@ include_directories(
         ${PCL_INCLUDE_DIRS}
         ${PCL_COMMON_INCLUDE_DIRS}
 )
-## HESAI
-# Offline Lib
-ament_auto_add_library(hesai_ros_offline_extract_pcd SHARED
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/hesai/hesai_ros_offline_extract_pcd.cpp
-)
-target_link_libraries(hesai_ros_offline_extract_pcd ${PCL_LIBRARIES})
-ament_auto_add_executable(hesai_ros_offline_extract_pcd_node
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/hesai/hesai_ros_offline_extract_pcd_main.cpp
-)
-# Extraction for TEST Lib
-ament_auto_add_library(hesai_ros_offline_extract_bag_pcd SHARED
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/hesai/hesai_ros_offline_extract_bag_pcd.cpp
-)
-target_link_libraries(hesai_ros_offline_extract_bag_pcd ${PCL_LIBRARIES})
-ament_auto_add_executable(hesai_ros_offline_extract_bag_pcd_node
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/hesai/hesai_ros_offline_extract_bag_pcd_main.cpp
-)
 
 ## Velodyne
 # Extraction for TEST Lib
