@@ -72,7 +72,7 @@ ContinentalARS548DriverRosWrapper::ContinentalARS548DriverRosWrapper(
     this->create_publisher<visualization_msgs::msg::MarkerArray>("marker_array", 10);
 
   diagnostics_pub_ =
-    this->create_publisher<diagnostic_msgs::msg::DiagnosticArray>("diagnostics", 10);
+    this->create_publisher<diagnostic_msgs::msg::DiagnosticArray>("/diagnostics", 10);
 }
 
 void ContinentalARS548DriverRosWrapper::ReceivePacketsMsgCallback(
